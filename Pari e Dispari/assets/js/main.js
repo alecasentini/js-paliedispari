@@ -11,13 +11,13 @@ function gioca(){
     let risultatoPari = somma % 2 == 0;
 
     if ((risultatoPari && sceltaPari) || (!risultatoPari && sceltaDispari)){
-        document.getElementById("final-result").innerHTML =`Hai vinto!`
+        document.getElementById("final-result").innerHTML =`Hai vinto! 🥳`
     }
 
     else{
-        document.getElementById("final-result").innerHTML =`Hai perso!`
+        document.getElementById("final-result").innerHTML =`Hai perso! 😭`
     }
-    
-    document.getElementById("number-cpu").innerHTML = "Numero del computer: " + numberCpu;
+
+    document.getElementById("number-cpu").innerHTML = "Il numero del computer è " + numberCpu;
     document.getElementById("somma").innerHTML = "Somma: " + somma;
 }
