@@ -10,14 +10,16 @@ let lettereAlContrario =  parolaDivisa.reverse();
 
 
 let parolaAlContrario = lettereAlContrario.join('');
-console.log(parolaAlContrario)
 
 if (parola == parolaAlContrario){
-    document.getElementById("risultato").innerHTML ="la parola è palindroma"
-    console.log ("la parola è palindroma")
+    document.getElementById("risultato").innerHTML ="la parola è palindroma 😄"
+    document.getElementById("contrario").innerHTML =`anche al contrario si legge ${parolaAlContrario} 😎`
+
 }
 else {
-    document.getElementById("risultato").innerHTML ="la parola NON è palindroma"
-    console.log ("la parola NON è palindroma")
+    document.getElementById("risultato").innerHTML ="la parola NON è palindroma 😕"
+    document.getElementById("contrario").innerHTML =`al contrario si legge ${parolaAlContrario} 😨`
+
+
 }
 }
