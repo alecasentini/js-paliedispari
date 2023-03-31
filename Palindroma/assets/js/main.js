@@ -13,13 +13,12 @@ let parolaAlContrario = lettereAlContrario.join('');
 
 if (parola == parolaAlContrario){
     document.getElementById("risultato").innerHTML ="la parola è palindroma 😄"
-    document.getElementById("contrario").innerHTML =`anche al contrario si legge ${parolaAlContrario} 😎`
+    document.getElementById("contrario").innerHTML =`anche al contrario si legge <span class="text-uppercase">${parolaAlContrario}</span> 😎`
 
 }
 else {
     document.getElementById("risultato").innerHTML ="la parola NON è palindroma 😕"
-    document.getElementById("contrario").innerHTML =`al contrario si legge ${parolaAlContrario} 😨`
-
+    document.getElementById("contrario").innerHTML =`al contrario si legge <span class="text-uppercase">${parolaAlContrario}</span> 😨`
 
 }
 }
